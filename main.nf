@@ -5,6 +5,7 @@ params.ref = 'https://github.com/nf-core/test-datasets/raw/viralrecon/genome/MN9
 process dragen {
   label 'dragen'
   memory '4 GB'
+  container 'ubuntu'
   secret 'DRAGEN_USERNAME'
   secret 'DRAGEN_PASSWORD'
   input: 

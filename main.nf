@@ -40,7 +40,7 @@ process dragen_map {
     path '*.bam'
   """
     /opt/edico/bin/dragen \
-        $index \
+        -r $index \
         --output-directory ./ \
         --output-file-prefix SAMPLE2_PE \
         --lic-server=\$DRAGEN_USERNAME:\$DRAGEN_PASSWORD@license.edicogenome.com \

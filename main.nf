@@ -9,8 +9,8 @@ ch_reads = Channel.from(file(params.read1), file(params.read2)).collect()
 
 process dragen_index {
   label 'dragen'
-  memory '24 GB'
-  container 'ubuntu'
+  memory '12 GB'
+  container 'centos'
   secret 'DRAGEN_USERNAME'
   secret 'DRAGEN_PASSWORD'
   input: 
@@ -29,8 +29,8 @@ process dragen_index {
 
 process dragen_map {
   label 'dragen'
-  memory '24 GB'
-  container 'ubuntu'
+  memory '12 GB'
+  container 'centos'
   secret 'DRAGEN_USERNAME'
   secret 'DRAGEN_PASSWORD'
   input:
